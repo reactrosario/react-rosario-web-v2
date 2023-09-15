@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import introData from "data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,18 +14,20 @@ import fadeWhenScroll from "common/fadeWhenScroll";
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithSlider = ({ sliderRef }) => {
-  const [load, setLoad] = React.useState(true);
-  React.useEffect(() => {
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
+
     setTimeout(() => {
       removeSlashFromPagination();
       setLoad(false);
     }, 1000);
   }, []);
 
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
-  const paginationRef = React.useRef(null);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+  const paginationRef = useRef(null);
 
   return (
     <header
@@ -53,12 +55,12 @@ const IntroWithSlider = ({ sliderRef }) => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
-                  swiper.slides[i].childNodes[0].setAttribute(
+                for (const element of swiper.slides) {
+                  element.childNodes[0].setAttribute(
                     "data-swiper-parallax",
                     0.75 * swiper.width
                   );
-                }
+                };
 
                 swiper.params.navigation.prevEl = navigationPrevRef.current;
                 swiper.params.navigation.nextEl = navigationNextRef.current;
@@ -90,8 +92,8 @@ const IntroWithSlider = ({ sliderRef }) => {
                         <div className="caption center mt-30">
                           <h1 className="color-font">{slide.title}</h1>
                           {slide?.content && <p>{slide.content}</p>}
-                          <Link to="/about/about-dark" className="butn bord curve mt-30">
-                            <span>Look More</span>
+                          <Link to="/about" className="butn bord curve mt-30">
+                            <span>M&aacute;s Informaci&oacute;n</span>
                           </Link>
                         </div>
                       </div>

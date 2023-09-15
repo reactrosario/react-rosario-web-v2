@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "components/Navbar/navbar";
 import IntroWithSlider from "components/Intro-with-slider/intro-with-slider";
 import AboutUs from "components/About-us/about-us";
@@ -13,31 +13,34 @@ import CallToAction from "components/Call-to-action/call-to-action";
 import Footer from "components/Footer/footer";
 import DarkTheme from "layouts/Dark";
 
-const Homepage1 = () => {
+const Home = () => {
   const fixedSlider = React.useRef(null);
   const MainContent = React.useRef(null);
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setInterval(() => {
+      let slidHeight;
+  
       if (fixedSlider.current) {
-        var slidHeight = fixedSlider.current.offsetHeight;
+        slidHeight = fixedSlider.current.offsetHeight;
       }
       if (MainContent.current) {
         MainContent.current.style.marginTop = slidHeight + "px";
       }
     }, 1000);
 
-    var navbar = navbarRef.current;
+    let navbar = navbarRef.current;
 
-    if (window.pageYOffset > 300) {
+    if (window.scrollY > 300) {
       navbar.classList.add("nav-scroll");
     } else {
       navbar.classList.remove("nav-scroll");
     }
+
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         navbar.classList.add("nav-scroll");
       } else {
         navbar.classList.remove("nav-scroll");
@@ -49,6 +52,7 @@ const Homepage1 = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
+
       <div ref={MainContent} className="main-content">
         <AboutUs />
         <Services />
@@ -68,9 +72,9 @@ const Homepage1 = () => {
 export const Head = () => {
   return (
     <>
-      <title>Vie - Home 1 Dark</title>
+      <title>React Rosario - Inicio</title>
     </>
   )
 }
 
-export default Homepage1;
+export default Home;
