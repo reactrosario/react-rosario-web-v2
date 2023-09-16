@@ -3,18 +3,18 @@
         "id": 1,
         "title": "React Rosario",
         "content": "Somos un grupo de desarrolladores entusiastas de ReactJS basados en la ciudad de Rosario, con ganas de impulsar la comunidad local",
-        "image": "/img/slid/02.jpg"
+        "image": "/img/slid/01.jpg"
     },
     {
         "id": 2,
         "title": "Comunidad",
         "content": "Fomentamos el crecimiento de la comunidad de desarrolladores de React en la zona",
-        "image": "/img/slid/03.jpg"
+        "image": "/img/slid/02.jpg"
     },
     {
         "id": 3,
         "title": "Meet Ups",
         "content": "Organizamos reuniones periódicas de la comunidad",
-        "image": "/img/slid/01.jpg"
+        "image": "/img/slid/03.jpg"
     }
 ]
