@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vie',
-    description: 'Vie - Multi-Purpose React.js Gatsby Template',
-    author: 'ThemesCamp'
+    title: 'React Rosario',
+    description: 'Una comunidad de desarrolladores ReactJS y más',
+    author: 'React Rosario'
   },
   plugins: [
     'gatsby-plugin-resolve-src',
