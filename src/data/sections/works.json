@@ -4,27 +4,27 @@
     "title": "Meet Up #8",
     "secTex": "InterMeetup Rosario Buenos Aires",
     "image": "/img/portfolio/metro/01.jpeg",
-    "slug": "/project-details2/project-details2-dark"
+    "slug": "https://www.meetup.com/reactrosario/events/268911394/"
   },
   {
     "id": 2,
     "title": "Meet Up #7",
     "secTex": "Mobile Wars",
     "image": "/img/portfolio/metro/02.jpeg",
-    "slug": "/project-details2/project-details2-dark"
+    "slug": "https://www.meetup.com/reactrosario/events/267093716/"
   },
   {
     "id": 3,
     "title": "Meet Up #6",
     "secTex": "Testing en ReactJS",
     "image": "/img/portfolio/metro/03.jpeg",
-    "slug": "/project-details2/project-details2-dark"
+    "slug": "https://www.meetup.com/reactrosario/events/266208079/"
   },
   {
     "id": 4,
     "title": "Meet Up #5",
     "secTex": "Formik",
     "image": "/img/portfolio/metro/04.jpeg",
-    "slug": "/project-details2/project-details2-dark"
+    "slug": "https://www.meetup.com/reactrosario/events/265309915/"
   }
 ]
