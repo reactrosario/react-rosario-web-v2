@@ -48,6 +48,7 @@ const WorksDark = () => {
       </div>
       <Navbar nr={navbarRef} lr={logoRef} />
       <WorksHeader sliderRef={fixedHeader} />
+
       <div ref={MainContent} className="main-content">
         <WorksStyle2 grid={2} hideFilter filterPosition="center" />
         <Footer />
@@ -59,7 +60,7 @@ const WorksDark = () => {
 export const Head = () => {
   return (
     <>
-      <title>Vie - Works 3 Dark</title>
+      <title>React Rosario - Meet Ups</title>
     </>
   )
 }

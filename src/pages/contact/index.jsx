@@ -48,7 +48,7 @@ const Contact = () => {
 export const Head = () => {
   return (
     <>
-      <title>Vie - Contact Dark</title>
+      <title>React Rosario - Contacto</title>
     </>
   )
 }

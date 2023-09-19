@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import worksData from "data/sections/works.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-import { Link } from "gatsby";
+import worksData from "data/sections/works.json";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -87,9 +87,9 @@ const Works = () => {
                             <a href="#0">{item.title}</a>
                           </h6>
                           <h4>
-                            <Link to={`/project-details2/project-details2-dark`}>
+                            <a href={item.slug} target="_blank" rel="noreferrer">
                               {item.secTex}
-                            </Link>
+                            </a>
                           </h4>
                         </div>
                       </div>
