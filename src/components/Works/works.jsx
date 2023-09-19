@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import worksData from "data/sections/works.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
@@ -9,11 +9,11 @@ import "swiper/css/navigation";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Works = () => {
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
-  const [pageLoaded, setPageLoaded] = React.useState(false);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+  const [pageLoaded, setPageLoaded] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setPageLoaded(true);
   }, [pageLoaded]);
 
