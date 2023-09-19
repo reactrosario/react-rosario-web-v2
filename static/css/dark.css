@@ -6805,13 +6805,13 @@ span:hover {
     linear,
     left top,
     right top,
-    from(#12c2e9),
-    color-stop(#c471ed),
-    to(#f64f59)
+    from(#61dafb),
+    color-stop(#754bbf),
+    to(#754bbf)
   );
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-linear-gradient(left, #61dafb, #754bbf, #754bbf);
+  background: -o-linear-gradient(left, #61dafb, #754bbf, #754bbf);
+  background: linear-gradient(to right, #61dafb, #754bbf, #754bbf);
   z-index: -4;
 }
 
