@@ -60,8 +60,8 @@ const Home = () => {
         <Numbers />
         <VideoWithTestimonials />
         <SkillsCircle theme="dark" />
-        <Clients theme="dark" />
-        <Blogs1 />
+        {/* <Clients theme="dark" />
+        <Blogs1 /> */}
         <CallToAction />
         <Footer />
       </div>
