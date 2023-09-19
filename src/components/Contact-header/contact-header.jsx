@@ -3,7 +3,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particlesConfig from "config/particle-config";
 import particlesBlackConfig from "config/pr-s-black";
-import ContentHeaderDate from "data/sections/contact-header.json";
+import ContentHeaderData from "data/sections/contact-header.json";
 
 const ContactHeader = ({ sliderRef, blackStar }) => {
   useEffect(() => {
@@ -27,10 +27,10 @@ const ContactHeader = ({ sliderRef, blackStar }) => {
             <div className="capt">
               <div className="text-center">
                 <h1 className="color-font mb-10 fw-700">
-                  {ContentHeaderDate.title.first} <br />
-                  {ContentHeaderDate.title.second}
+                  {ContentHeaderData.title.first} <br />
+                  {ContentHeaderData.title.second}
                 </h1>
-                <p>{ContentHeaderDate.content}</p>
+                <p>{ContentHeaderData.content}</p>
               </div>
             </div>
           </div>
