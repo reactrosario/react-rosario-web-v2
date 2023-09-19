@@ -16,5 +16,11 @@
         "icon": "pe-7s-phone",
         "title": "Difusión",
         "content": "Difundimos los eventos a través de redes sociales"
+    },
+    {
+        "id": 4,
+        "icon": "pe-7s-diamond",
+        "title": "Colaboración",
+        "content": "Colaboramos con las espacios y auspiciantes locales"
     }
 ]
