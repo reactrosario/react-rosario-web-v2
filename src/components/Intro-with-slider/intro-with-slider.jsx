@@ -120,16 +120,36 @@ const IntroWithSlider = ({ sliderRef }) => {
         <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
         <div className="social-icon">
-          <a href="https://www.meetup.com/es/reactrosario/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.meetup.com/es/reactrosario/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario grupo de Meetup"
+          >
             <i className="fab fa-meetup"></i>
           </a>
-          <a href="https://twitter.com/reactrosario" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/reactrosario"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de Twitter (X)"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/reactrosario/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/reactrosario/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de Instagram"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/@reactrosario7085" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.youtube.com/@reactrosario7085"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de YouTube"
+          >
             <i className="fab fa-youtube"></i>
           </a>
         </div>

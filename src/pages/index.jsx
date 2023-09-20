@@ -65,12 +65,10 @@ const Home = () => {
   );
 };
 
-export const Head = () => {
-  return (
-    <>
-      <title>React Rosario - Inicio</title>
-    </>
-  )
-}
+export const Head = () => (
+  <>
+    <title>React Rosario - Inicio</title>
+  </>
+);
 
 export default Home;
