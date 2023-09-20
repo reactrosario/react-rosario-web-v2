@@ -91,7 +91,7 @@ const IntroWithSlider = ({ sliderRef }) => {
                         <div className="caption center mt-30">
                           <h1 className="color-font">{slide.title}</h1>
                           {slide?.content && <p>{slide.content}</p>}
-                          <Link to="/about" className="butn bord curve mt-30">
+                          <Link to="/about" className="butn bord curve mt-30" aria-label="Acerca de React Rosario">
                             <span>M&aacute;s Informaci&oacute;n</span>
                           </Link>
                         </div>

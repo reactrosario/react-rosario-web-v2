@@ -40,17 +40,17 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={`/about`} className="nav-link">
+              <Link to="/about" className="nav-link" aria-label="Acerca de React Rosario">
                 Sobre Nosotros
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link to={`/meet-ups`} className="nav-link">
+              <Link to="/meet-ups" className="nav-link" aria-label="Meetups de React Rosario">
                 Meet Ups
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={`/contact`} className="nav-link">
+              <Link to="/contact" className="nav-link" aria-label="Contacto con React Rosario">
                 Contacto
               </Link>
             </li>

@@ -17,7 +17,7 @@ const AboutUs = () => (
               {AboutUsData.title}
             </h3>
             <p>{AboutUsData.content}</p>
-            <Link to="/about" className="butn bord curve mt-30">
+            <Link to="/about" className="butn bord curve mt-30" aria-label="Acerca de React Rosario">
               <span>M&aacute;s Informaci&oacute;n</span>
             </Link>
           </div>
