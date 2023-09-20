@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import fadeWhenScroll from "common/fadeWhenScroll";
 
 const WorksHeader = ({ sliderRef }) => {
-  React.useEffect(() => {
+  useEffect(() => {
     fadeWhenScroll(document.querySelectorAll(".fixed-slider .capt .parlx"));
   }, []);
 

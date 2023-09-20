@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import appData from "data/app.json";
+import { StaticImage } from "gatsby-plugin-image";
+
 import { handleMobileDropdown } from "common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
@@ -13,7 +14,7 @@ const Navbar = ({ lr, nr, theme }) => {
     >
       <div className="container">
         <Link to="/" className="logo">
-          <img ref={lr} src={appData.lightLogo} alt="logo" />
+          <StaticImage ref={lr} src="../../../static/img/RR_logo_03.png" alt="React Rosario Logo" />
         </Link>
 
         <button

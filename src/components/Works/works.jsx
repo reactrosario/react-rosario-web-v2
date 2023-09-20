@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 import worksData from "data/sections/works.json";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Works = () => {
   const navigationPrevRef = useRef(null);
@@ -24,6 +24,7 @@ const Works = () => {
           <div className="col-lg-12 no-padding">
             <div className="swiper-container">
               <Swiper
+                modules={[Autoplay, Pagination, Navigation]}
                 className="swiper-wrapper"
                 slidesPerView={2}
                 centeredSlides={true}

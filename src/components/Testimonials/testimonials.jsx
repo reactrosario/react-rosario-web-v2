@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Parallax } from "swiper";
+import { Pagination, Parallax } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-SwiperCore.use([Pagination, Parallax]);
 
 const Testimonials = () => {
   const [load, setLoad] = useState(false);
@@ -35,6 +33,7 @@ const Testimonials = () => {
               {
                 load ? (
                   <Swiper
+                    modules={[Pagination, Parallax]}
                     slidesPerView={3}
                     spaceBetween={30}
                     speed={1000}

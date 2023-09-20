@@ -1,17 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
-import introData from "data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Parallax } from "swiper/modules";
 
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import introData from "data/sections/intro.json";
+import removeSlashFromPagination from "common/removeSlashpagination";
+import fadeWhenScroll from "common/fadeWhenScroll";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import removeSlashFromPagination from "common/removeSlashpagination";
-import fadeWhenScroll from "common/fadeWhenScroll";
-
-SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithSlider = ({ sliderRef }) => {
   const [load, setLoad] = useState(true);
@@ -37,6 +35,7 @@ const IntroWithSlider = ({ sliderRef }) => {
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper
+            modules={[Navigation, Pagination, Parallax]}
             speed={1000}
             parallax={true}
             navigation={{
@@ -121,16 +120,36 @@ const IntroWithSlider = ({ sliderRef }) => {
         <div ref={paginationRef} className="swiper-pagination top botm"></div>
 
         <div className="social-icon">
-          <a href="https://www.meetup.com/es/reactrosario/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.meetup.com/es/reactrosario/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario grupo de Meetup"
+          >
             <i className="fab fa-meetup"></i>
           </a>
-          <a href="https://twitter.com/reactrosario" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/reactrosario"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de Twitter (X)"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/reactrosario/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/reactrosario/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de Instagram"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/@reactrosario7085" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.youtube.com/@reactrosario7085"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="React Rosario cuenta de YouTube"
+          >
             <i className="fab fa-youtube"></i>
           </a>
         </div>

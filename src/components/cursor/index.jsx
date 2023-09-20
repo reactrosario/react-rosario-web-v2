@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import mouseEffect from "common/mouseEffect";
 
 const Cursor = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     mouseEffect();
   }, []);
+
   return (
     <>
       <div className="mouse-cursor cursor-outer"></div>

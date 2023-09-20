@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
 import initIsotope from "common/initIsotope";
 
 const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
@@ -39,7 +41,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a to="https://www.meetup.com/reactrosario/events/268911394/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-8-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-8-001.jpg" alt="meetup 8 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -58,7 +60,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a to="https://www.meetup.com/reactrosario/events/267093716/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-7-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-7-001.jpg" alt="meetup 7 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -77,7 +79,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a to="https://www.meetup.com/reactrosario/events/266208079/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-6-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-6-001.jpg" alt="meetup 6 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -96,7 +98,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a href="https://www.meetup.com/reactrosario/events/265309915/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-5-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-5-001.jpg" alt="meetup 5 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -115,7 +117,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a href="https://www.meetup.com/reactrosario/events/264418775/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-4-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-4-001.jpg" alt="meetup 4 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -134,7 +136,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a href="https://www.meetup.com/reactrosario/events/263285732/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-3-001.jpg" alt="image" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-3-001.jpg" alt="meetup 3 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -153,7 +155,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a href="https://www.meetup.com/reactrosario/events/262285364/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-2-001.jpg" alt="meetup-2" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-2-001.jpg" alt="meetup 2 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
@@ -172,7 +174,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a href="https://www.meetup.com/reactrosario/events/261526795/" className="imago wow" target="_blank" rel="noopener noreferrer">
-                  <img src="/img/portfolio/meetup-1-001.jpg" alt="meetup-1" />
+                  <StaticImage src="../../../static/img/portfolio/meetup-1-001.jpg" alt="meetup 1 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>

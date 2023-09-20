@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const PagesHeader = () => (
   <header className="pages-header circle-bg valign">
@@ -14,7 +15,7 @@ const PagesHeader = () => (
         </div>
         <div className="col-lg-10">
           <div className="img">
-            <img src="/img/slid/about.jpg" alt="" />
+            <StaticImage src="../../../static/img/slid/about.jpg" alt="team image" />
           </div>
         </div>
       </div>
