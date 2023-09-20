@@ -17,7 +17,6 @@ module.exports = {
         path: `${__dirname}/static/img/`,
       },
     },
-    'gatsby-plugin-netlify',
   ],
   trailingSlash: "always"
 }
