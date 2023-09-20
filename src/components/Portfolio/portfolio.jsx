@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'gatsby';
 import initIsotope from "../../common/initIsotope";
 
 const Portfolio = ({ grid, filterPosition }) => {
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       initIsotope();
     }, 1000);
   }, []);
+
   return (
     <section className="portfolio section-padding pb-70">
       <div className="container">
