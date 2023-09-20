@@ -3,15 +3,13 @@ import { Link } from "gatsby";
 import introData from "data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import { Navigation, Pagination, Parallax } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import removeSlashFromPagination from "common/removeSlashpagination";
 import fadeWhenScroll from "common/fadeWhenScroll";
-
-SwiperCore.use([Navigation, Pagination, Parallax]);
 
 const IntroWithSlider = ({ sliderRef }) => {
   const [load, setLoad] = useState(true);
@@ -37,6 +35,7 @@ const IntroWithSlider = ({ sliderRef }) => {
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper
+            modules={[Navigation, Pagination, Parallax]}
             speed={1000}
             parallax={true}
             navigation={{
