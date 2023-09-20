@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
-import introData from "data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Navigation, Pagination, Parallax } from "swiper/modules";
+
+import introData from "data/sections/intro.json";
+import removeSlashFromPagination from "common/removeSlashpagination";
+import fadeWhenScroll from "common/fadeWhenScroll";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import removeSlashFromPagination from "common/removeSlashpagination";
-import fadeWhenScroll from "common/fadeWhenScroll";
 
 const IntroWithSlider = ({ sliderRef }) => {
   const [load, setLoad] = useState(true);

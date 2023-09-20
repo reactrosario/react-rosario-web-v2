@@ -3,7 +3,7 @@
   "smallTitle": "Sobre Nosotros",
   "title": "Comunidad",
   "content": "Somos un grupo de colegas desarrolladores que se dedican a la organización de reuniones y eventos orientados a la comunidad local de ReactJS y JavaScript, en la ciudad de Rosario.",
-  "image": "/img/feat.jpg",
+  "image": "../../../static/img/feat.jpg",
   "stauts": [
     { "id": 1, "number": "500", "letter": "+", "stautsName": "Miembros" },
     { "id": 2, "number": "8", "letter": "", "stautsName": "Meet Ups" }

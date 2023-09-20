@@ -38,7 +38,11 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-webpack-plugin": "^4.0.1",
     "gatsby-plugin-eslint": "^4.0.4",
+    "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.0",
     "sass": "^1.67.0"
   }
 }

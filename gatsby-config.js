@@ -6,7 +6,17 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-eslint'
+    'gatsby-plugin-eslint',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/static/img/`,
+      },
+    },
   ],
   trailingSlash: "always"
 }

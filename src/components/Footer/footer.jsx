@@ -1,5 +1,5 @@
 import React from "react";
-import appData from "data/app.json";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = ({ hideBGCOLOR }) => (
   <footer className={`${!hideBGCOLOR ? "sub-bg" : ""}`}>
@@ -84,7 +84,7 @@ const Footer = ({ hideBGCOLOR }) => (
         <div className="col-lg-4">
           <div className="item">
             <div className="logo">
-              <img src={appData.lightLogo} alt="" />
+              <StaticImage src="../../../static/img/RR_logo_03.png" alt="React Rosario Logo" />
             </div>
             <div className="social">
               <a href="https://www.meetup.com/es/reactrosario/" target="_blank" rel="noreferrer">
