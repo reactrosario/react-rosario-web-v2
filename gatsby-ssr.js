@@ -1,8 +1,8 @@
 import React from "react";
 
 const HtmlAttributes = {
-  lang: "en"
-}
+  lang: "es",
+};
 
 const HeadComponents = [
   // Meta Tags
@@ -30,7 +30,7 @@ const HeadComponents = [
   <script key="splitting" src="/js/splitting.min.js"></script>,
   <script key="simpleParallax" src="/js/simpleParallax.min.js"></script>,
   <script key="wow" src="/js/wow.min.js"></script>,
-]
+];
 
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
   setHtmlAttributes(HtmlAttributes);
