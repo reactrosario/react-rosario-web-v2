@@ -13,7 +13,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
   return (
     <section className={`${grid ? (grid === 3 ? "three-column" : null) : null} portfolio section-padding pb-70`}>
       <div className="container">
-        {/* <div className="row">
+        <div className="row">
           <div style={{ textAlign: 'center' }} className="full-width">
             <h6 className="fw-100 text-u ls10 mb-10">
               Agend&aacute;
@@ -22,7 +22,38 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
               Pr&oacute;ximo Evento
             </h3>
           </div>
-        </div> */}
+
+          <div className="gallery full-width">
+            <div
+              className="col-sm-12 items graphic wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div className="item-img">
+                <a
+                  href="https://www.meetup.com/reactrosario/events/296274365/"
+                  className="imago wow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: 'flex', justifyContent: 'center' }}
+                >
+                  <StaticImage
+                    src="../../../static/img/portfolio/meetup-9-001.jpg"
+                    alt="meetup 9 cover"
+                    style={{ width: '60%' }}
+                  />
+                  <div className="item-img-overlay"></div>
+                </a>
+              </div>
+              <div className="cont">
+                <h6>Meet Up #9</h6>
+                <span>
+                  <a href="#0">RectJS</a>,
+                  <a href="#0">NextJS</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="row">
           <div style={{ textAlign: 'center' }} className="full-width">
@@ -40,7 +71,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <a to="https://www.meetup.com/reactrosario/events/268911394/" className="imago wow" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.meetup.com/reactrosario/events/268911394/" className="imago wow" target="_blank" rel="noopener noreferrer">
                   <StaticImage src="../../../static/img/portfolio/meetup-8-001.jpg" alt="meetup 8 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
@@ -59,7 +90,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <a to="https://www.meetup.com/reactrosario/events/267093716/" className="imago wow" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.meetup.com/reactrosario/events/267093716/" className="imago wow" target="_blank" rel="noopener noreferrer">
                   <StaticImage src="../../../static/img/portfolio/meetup-7-001.jpg" alt="meetup 7 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
@@ -78,7 +109,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <a to="https://www.meetup.com/reactrosario/events/266208079/" className="imago wow" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.meetup.com/reactrosario/events/266208079/" className="imago wow" target="_blank" rel="noopener noreferrer">
                   <StaticImage src="../../../static/img/portfolio/meetup-6-001.jpg" alt="meetup 6 cover" />
                   <div className="item-img-overlay"></div>
                 </a>
