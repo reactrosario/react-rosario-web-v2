@@ -44,7 +44,8 @@
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
-    "sass": "^1.67.0"
+    "sass": "^1.67.0",
+    "typescript": "^5.2.2"
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.3.0"
