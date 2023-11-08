@@ -30,25 +30,25 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
             >
               <div className="item-img">
                 <a
-                  href="https://www.meetup.com/reactrosario/events/296274365/"
+                  href="https://www.meetup.com/reactrosario/events/296956808/"
                   className="imago wow"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ display: 'flex', justifyContent: 'center' }}
                 >
                   <StaticImage
-                    src="../../../static/img/portfolio/meetup-9-001.jpg"
-                    alt="meetup 9 cover"
+                    src="../../../static/img/portfolio/meetup-10-001.jpg"
+                    alt="meetup 10 cover"
                     style={{ width: '60%' }}
                   />
                   <div className="item-img-overlay"></div>
                 </a>
               </div>
               <div className="cont">
-                <h6>Meet Up #9</h6>
+                <h6>Meet Up #10</h6>
                 <span>
                   <a href="#0">RectJS</a>,
-                  <a href="#0">NextJS</a>
+                  <a href="#0">Firebase</a>
                 </span>
               </div>
             </div>
@@ -66,6 +66,25 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition }) => {
           </div>
 
           <div className="gallery full-width">
+            <div
+              className={`${grid === 3 ? "col-lg-4 col-md-6" : grid === 2 ? "col-md-6" : "col-12"} items graphic wow fadeInUp`}
+              data-wow-delay=".4s"
+            >
+              <div className="item-img">
+                <a href="https://www.meetup.com/reactrosario/events/296274365/" className="imago wow" target="_blank" rel="noopener noreferrer">
+                  <StaticImage src="../../../static/img/portfolio/meetup-9-001.jpg" alt="meetup 9 cover" />
+                  <div className="item-img-overlay"></div>
+                </a>
+              </div>
+              <div className="cont">
+                <h6>Meet Up #9</h6>
+                <span>
+                  <a href="#0">ReactJS</a>,
+                  <a href="#0">NextJS</a>
+                </span>
+              </div>
+            </div>
+
             <div
               className={`${grid === 3 ? "col-lg-4 col-md-6" : grid === 2 ? "col-md-6" : "col-12"} items graphic wow fadeInUp`}
               data-wow-delay=".4s"
