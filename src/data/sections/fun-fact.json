@@ -2,18 +2,18 @@
     "id": 1,
     "icon": "pe-7s-smile",
     "content": "Organizadores comprometidos con el desarrollo de la comunidad.",
-    "value": "5"
+    "value": "3"
 },
 {
     "id": 2,
     "icon": "pe-7s-users",
     "content": "Meet ups organizados en la región.",
-    "value": "8"
+    "value": "10"
 },
 {
     "id": 3,
     "icon": "pe-7s-science",
     "content": "Charlas de diversas temáticas relacionadas a ReactJS.",
-    "value": "12"
+    "value": "14"
 }
 ]
