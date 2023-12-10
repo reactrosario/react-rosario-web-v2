@@ -8,7 +8,7 @@ const PagesHeader = () => (
         <div className="col-lg-10">
           <div className="cont mt-100 mb-50 text-center">
             <h1 className="color-font fw-700">
-              Nuestro equipo organizativo es apasionado por el desarrollo
+              Nuestro equipo organizador es apasionado por el desarrollo
               de la comunidad local
             </h1>
           </div>
